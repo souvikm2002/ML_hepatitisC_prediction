@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Disease prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" href="https://media.istockphoto.com/illustrations/hemoglobin-illustration-id1130287180?k=20&m=1130287180&s=612x612&w=0&h=6ICIdA-zYCMuaMiGdyWp6zYdalC-gbPuPqBBixxkAzc=">
+</head>
+
+<body>
+    <div class="img"></div>
+    <form class="forms">
+        <div class="insert_gender">
+            <h2>Gender</h2>
+            <select class="gender" name="" id="uiGender">
+                <option value="" disabled="disabled" selected="selected">Select your gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+    </form>
+    <div class="form">
+        
+        <div class="insert">
+
+            <h2>Age</h2>
+            <input class="area" type="text" id="uiAge" class="floatLabel" name="Squareft" placeholder="Enter a valid age [25 - 80]">
+        </div>
+
+        <div class="insert">
+
+            <h2>Albumin</h2>
+            <input class="area" type="text" id="uiAlb" class="floatLabel" name="Squareft" placeholder="Eg. 37.1">
+        </div>
+
+        <div class="insert">
+
+            <h2>ALP</h2>
+            <input class="area" type="text" id="uiAlp" class="floatLabel" name="Squareft" placeholder="Eg. 60.2">
+        </div>
+
+        <div class="insert">
+
+            <h2>ALT</h2>
+            <input class="area" type="text" id="uiAlt" class="floatLabel" name="Squareft" placeholder="Eg. 10.1">
+        </div>
+
+        <div class="insert">
+
+            <h2>AST</h2>
+            <input class="area" type="text" id="uiAst" class="floatLabel" name="Squareft" placeholder="Eg. 80.2">
+        </div>
+
+        <div class="insert">
+
+            <h2>Bilirubin</h2>
+            <input class="area" type="text" id="uiBil" class="floatLabel" name="Squareft" placeholder="Eg. 12">
+        </div>
+
+        <div class="insert">
+
+            <h2>Serum Chlorinase</h2>
+            <input class="area" type="text" id="uiChe" class="floatLabel" name="Squareft" placeholder="Eg. 500.08">
+        </div>
+
+        <div class="insert">
+
+            <h2>Cholestrol</h2>
+            <input class="area" type="text" id="uiChol" class="floatLabel" name="Squareft" placeholder="Eg. 5.3">
+        </div>
+
+        <div class="insert">
+
+            <h2>Creatinine</h2>
+            <input class="area" type="text" id="uiCre" class="floatLabel" name="Squareft" placeholder="Eg. 67">
+        </div>
+
+        <div class="insert">
+
+            <h2>GGT</h2>
+            <input class="area" type="text" id="uiGgt" class="floatLabel" name="Squareft" placeholder="Eg. 34">
+        </div>
+
+        <div class="insert">
+
+            <h2>Protein</h2>
+            <input class="area" type="text" id="uiProt" class="floatLabel" name="Squareft" placeholder="Eg. 68">
+        </div>
+      
+    </div>
+    <form class="forms">
+        <button class="submit" id="pre_submit" type="button"><div class = 'color'>PREDICT DISEASE</div></button>
+        <div id="uiPredictedDisease" class="result">
+            <h2></h2>
+        </div></form>
+
+        <script src="app.js"></script>
+</body>
+
+</html>
